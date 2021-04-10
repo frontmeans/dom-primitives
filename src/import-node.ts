@@ -1,3 +1,6 @@
+import { nodeDocument } from './node-document';
+import { isElementNode } from './node-types';
+
 /**
  * Imports DOM node from one document to another.
  *
@@ -8,9 +11,6 @@
  *
  * @returns Imported node.
  */
-import { nodeDocument } from './node-document';
-import { isElementNode } from './node-types';
-
 export function importNode<TNode extends Node>(
     from: TNode,
     to: Node,
