@@ -1,6 +1,6 @@
 {
   "name": "@frontmeans/dom-primitives",
-  "version": "1.0.0-dev.1",
+  "version": "1.0.0",
   "description": "DOM primitives",
   "keywords": [
     "dom"
