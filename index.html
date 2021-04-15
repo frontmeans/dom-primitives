@@ -64,8 +64,44 @@
 				<p><a href="https://www.npmjs.com/package/@frontmeans/dom-primitives"><img src="https://img.shields.io/npm/v/@frontmeans/dom-primitives.svg?logo=npm" alt="NPM"></a>
 					<a href="https://github.com/frontmeans/dom-primitives/actions?query=workflow%3ABuild"><img src="https://github.com/frontmeans/dom-primitives/workflows/Build/badge.svg" alt="Build Status"></a>
 					<a href="https://github.com/frontmeans/dom-primitives"><img src="https://img.shields.io/static/v1?logo=github&label=GitHub&message=project&color=informational" alt="GitHub Project"></a>
-				<a href="https://frontmneans.github.io/dom-primitives/"><img src="https://img.shields.io/static/v1?logo=typescript&label=API&message=docs&color=informational" alt="API Documentation"></a></p>
-				<p>An assorted set of basic DOM-related. See the <a href="https://frontmneans.github.io/dom-primitives/">API documentation</a>.</p>
+				<a href="https://frontmeans.github.io/dom-primitives/"><img src="https://img.shields.io/static/v1?logo=typescript&label=API&message=docs&color=informational" alt="API Documentation"></a></p>
+				<p>An assorted set of basic DOM-related. See the <a href="https://frontmeans.github.io/dom-primitives/">API documentation</a>.</p>
+				<a href="#dom-node-types" id="dom-node-types" style="color: inherit; text-decoration: none;">
+					<h2>DOM Node Types</h2>
+				</a>
+				<p>These function check whether the target <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node">DOM node</a> is of corresponding type:</p>
+				<ul>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element">isElementNode</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Attr">isAttributeNode</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Text">isTextNode</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/CDATASection">isCDATASectionNode</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ProcessingInstruction">isProcessingInstructionNode</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Comment">isCommentNode</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document">isDocumentNode</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentType">isDocumentTypeNode</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment">isDocumentFragmentNode</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot">isShadowRootNode</a></li>
+				</ul>
+				<a href="#dom-inspection" id="dom-inspection" style="color: inherit; text-decoration: none;">
+					<h2>DOM Inspection</h2>
+				</a>
+				<ul>
+					<li><p><a href="https://frontmeans.github.io/dom-primitives/modules.html#nodedocument">nodeDocument</a> - Returns a document of the given DOM node.</p>
+					</li>
+					<li><p><a href="https://frontmeans.github.io/dom-primitives/modules.html#nodehost">nodeHost</a> - Finds a host element of the given DOM node. I.e. an enclosing element.</p>
+						<p>Crosses shadow DOM bounds.</p>
+					</li>
+					<li><p><a href="https://frontmeans.github.io/dom-primitives/modules.html#nodewindow">nodeWindow</a> - Returns an owner window of the given DOM node.</p>
+					</li>
+				</ul>
+				<a href="#dom-manipulation" id="dom-manipulation" style="color: inherit; text-decoration: none;">
+					<h2>DOM Manipulation</h2>
+				</a>
+				<ul>
+					<li><a href="https://frontmeans.github.io/dom-primitives/modules.html#importnode">importNode</a> - Imports DOM node from one document to another.</li>
+					<li><a href="https://frontmeans.github.io/dom-primitives/modules.html#importnodecontent">importNodeContent</a> - Imports DOM node contents from one document to another.</li>
+					<li><a href="https://frontmeans.github.io/dom-primitives/modules.html#removenodecontent">removeNodeContent</a> - Removes all child nodes from the given one.</li>
+				</ul>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
