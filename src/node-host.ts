@@ -5,7 +5,7 @@ import { isElementNode } from './node-types';
  *
  * Crosses shadow DOM bounds.
  *
- * @param node - Target element.
+ * @param node - Target DOM node.
  *
  * @returns Either parent element of the given node, or `undefined` when not found.
  */
