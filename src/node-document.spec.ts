@@ -1,3 +1,4 @@
+import { beforeEach, describe, expect, it } from '@jest/globals';
 import { nodeDocument } from './node-document';
 
 describe('nodeDocument', () => {

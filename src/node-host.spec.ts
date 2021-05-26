@@ -1,3 +1,4 @@
+import { describe, expect, it } from '@jest/globals';
 import { nodeHost } from './node-host';
 
 describe('nodeHost', () => {
