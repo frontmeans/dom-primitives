@@ -22,6 +22,6 @@ export interface CustomHTMLElement extends HTMLElement {
  */
 export interface CustomHTMLElementClass<T extends CustomHTMLElement = CustomHTMLElement> extends Function {
   prototype: T;
-  observedAttributes?: readonly string[];
+  observedAttributes?: readonly string[] | undefined;
   new(): T;
 }
