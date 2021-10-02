@@ -51,6 +51,7 @@ describe('importNode', () => {
     el.innerHTML = '<span>test</span>';
 
     const clone = importNode(el, doc.body, () => { /* noop */});
+
     expect(clone.ownerDocument).toBe(doc);
     expect(doc.body.contains(clone)).toBe(true);
     expect(clone.childNodes).toHaveLength(0);
