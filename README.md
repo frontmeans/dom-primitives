@@ -54,9 +54,9 @@ DOM Inspection
 
 - [nodeWindow] - Returns an owner window of the given DOM node.
 
-[nodeDocument]: https://frontmeans.github.io/dom-primitives/modules.html#nodedocument
-[nodeHost]: https://frontmeans.github.io/dom-primitives/modules.html#nodehost
-[nodeWindow]: https://frontmeans.github.io/dom-primitives/modules.html#nodewindow
+[nodeDocument]: https://frontmeans.github.io/dom-primitives/modules.html#nodeDocument
+[nodeHost]: https://frontmeans.github.io/dom-primitives/modules.html#nodeHost
+[nodeWindow]: https://frontmeans.github.io/dom-primitives/modules.html#nodeWindow
 
 
 DOM Manipulation
@@ -66,6 +66,6 @@ DOM Manipulation
 - [importNodeContent] - Imports DOM node contents from one document to another.
 - [removeNodeContent] - Removes all child nodes from the given one.
 
-[importNode]: https://frontmeans.github.io/dom-primitives/modules.html#importnode
-[importNodeContent]: https://frontmeans.github.io/dom-primitives/modules.html#importnodecontent
-[removeNodeContent]: https://frontmeans.github.io/dom-primitives/modules.html#removenodecontent
+[importNode]: https://frontmeans.github.io/dom-primitives/modules.html#importNode
+[importNodeContent]: https://frontmeans.github.io/dom-primitives/modules.html#importNodeContent
+[removeNodeContent]: https://frontmeans.github.io/dom-primitives/modules.html#removeNodeContent

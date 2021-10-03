@@ -1,6 +1,6 @@
 /**
  * @packageDocumentation
- * @module Module @frontmeans/dom-primitives
+ * @module @frontmeans/dom-primitives
  */
 export * from './custom-html-element';
 export * from './import-node';
