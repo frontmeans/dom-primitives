@@ -1,12 +1,11 @@
-DOM Primitives
-==============
+# DOM Primitives
 
 [![NPM][npm-image]][npm-url]
 [![Build Status][build-status-img]][build-status-link]
 [![Code Quality][quality-img]][quality-link]
 [![Coverage][coverage-img]][coverage-link]
 [![GitHub Project][github-image]][github-url]
-[![API Documentation][api-docs-image]][API documentation]
+[![API Documentation][api-docs-image]][api documentation]
 
 An assorted set of basic DOM-related. See the [API documentation].
 
@@ -21,11 +20,9 @@ An assorted set of basic DOM-related. See the [API documentation].
 [github-image]: https://img.shields.io/static/v1?logo=github&label=GitHub&message=project&color=informational
 [github-url]: https://github.com/frontmeans/dom-primitives
 [api-docs-image]: https://img.shields.io/static/v1?logo=typescript&label=API&message=docs&color=informational
-[API documentation]: https://frontmeans.github.io/dom-primitives/ 
+[api documentation]: https://frontmeans.github.io/dom-primitives/
 
-
-DOM Node Types
---------------
+## DOM Node Types
 
 These function check whether the target [DOM node] is of corresponding type:
 
@@ -40,11 +37,9 @@ These function check whether the target [DOM node] is of corresponding type:
 - [isDocumentFragmentNode](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment)
 - [isShadowRootNode](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot)
 
-[DOM node]: https://developer.mozilla.org/en-US/docs/Web/API/Node
+[dom node]: https://developer.mozilla.org/en-US/docs/Web/API/Node
 
-
-DOM Inspection
---------------
+## DOM Inspection
 
 - [nodeDocument] - Returns a document of the given DOM node.
 
@@ -54,18 +49,16 @@ DOM Inspection
 
 - [nodeWindow] - Returns an owner window of the given DOM node.
 
-[nodeDocument]: https://frontmeans.github.io/dom-primitives/modules.html#nodeDocument
-[nodeHost]: https://frontmeans.github.io/dom-primitives/modules.html#nodeHost
-[nodeWindow]: https://frontmeans.github.io/dom-primitives/modules.html#nodeWindow
+[nodedocument]: https://frontmeans.github.io/dom-primitives/modules.html#nodeDocument
+[nodehost]: https://frontmeans.github.io/dom-primitives/modules.html#nodeHost
+[nodewindow]: https://frontmeans.github.io/dom-primitives/modules.html#nodeWindow
 
-
-DOM Manipulation
-----------------
+## DOM Manipulation
 
 - [importNode] - Imports DOM node from one document to another.
 - [importNodeContent] - Imports DOM node contents from one document to another.
 - [removeNodeContent] - Removes all child nodes from the given one.
 
-[importNode]: https://frontmeans.github.io/dom-primitives/modules.html#importNode
-[importNodeContent]: https://frontmeans.github.io/dom-primitives/modules.html#importNodeContent
-[removeNodeContent]: https://frontmeans.github.io/dom-primitives/modules.html#removeNodeContent
+[importnode]: https://frontmeans.github.io/dom-primitives/modules.html#importNode
+[importnodecontent]: https://frontmeans.github.io/dom-primitives/modules.html#importNodeContent
+[removenodecontent]: https://frontmeans.github.io/dom-primitives/modules.html#removeNodeContent
