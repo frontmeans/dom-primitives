@@ -2,7 +2,6 @@ import { beforeEach, describe, expect, it } from '@jest/globals';
 import { importNode } from './import-node';
 
 describe('importNode', () => {
-
   let doc: Document;
 
   beforeEach(() => {
@@ -10,7 +9,6 @@ describe('importNode', () => {
   });
 
   it('imports text node', () => {
-
     const node = document.createTextNode('test');
     const clone = importNode(node, doc.body);
 
@@ -19,7 +17,6 @@ describe('importNode', () => {
     expect(doc.body.contains(clone)).toBe(true);
   });
   it('imports element attributes', () => {
-
     const el = document.createElement('div');
 
     el.setAttribute('title', 'test');
@@ -31,7 +28,6 @@ describe('importNode', () => {
     expect(clone.className).toBe('test__class');
   });
   it('imports element content', () => {
-
     const el = document.createElement('div');
 
     el.innerHTML = '<span>test</span>';
@@ -45,19 +41,19 @@ describe('importNode', () => {
     expect(clone.textContent).toBe('test');
   });
   it('imports element contents with the given import function', () => {
-
     const el = document.createElement('div');
 
     el.innerHTML = '<span>test</span>';
 
-    const clone = importNode(el, doc.body, () => { /* noop */});
+    const clone = importNode(el, doc.body, () => {
+      /* noop */
+    });
 
     expect(clone.ownerDocument).toBe(doc);
     expect(doc.body.contains(clone)).toBe(true);
     expect(clone.childNodes).toHaveLength(0);
   });
   it('inserts imported element before another one', () => {
-
     const next = doc.body.appendChild(doc.createTextNode('.second'));
     const el = document.createElement('div');
 

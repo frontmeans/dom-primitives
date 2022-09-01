@@ -10,10 +10,11 @@ import { isElementNode } from './node-types';
  * @returns Either parent element of the given node, or `undefined` when not found.
  */
 export function nodeHost(node: Node): Element | undefined {
-
   const { parentNode } = node;
 
-  return parentNode && isElementNode(parentNode) && parentNode
-      || (node.getRootNode() as Partial<ShadowRoot>).host// Inside shadow DOM?
-      || undefined;
+  return (
+    (parentNode && isElementNode(parentNode) && parentNode)
+    || (node.getRootNode() as Partial<ShadowRoot>).host // Inside shadow DOM?
+    || undefined
+  );
 }

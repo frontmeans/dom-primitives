@@ -12,9 +12,9 @@ import { isElementNode } from './node-types';
  * @returns Imported node.
  */
 export function importNode<TNode extends Node>(
-    from: TNode,
-    to: Node,
-    importContent?: (this: void, from: TNode, to: TNode) => void,
+  from: TNode,
+  to: Node,
+  importContent?: (this: void, from: TNode, to: TNode) => void,
 ): TNode;
 
 /**
@@ -29,19 +29,18 @@ export function importNode<TNode extends Node>(
  * @returns Imported node.
  */
 export function importNode<TNode extends Node>(
-    from: TNode,
-    to: Node,
-    before?: Node | null,
-    importContent?: (this: void, from: TNode, to: TNode) => void,
+  from: TNode,
+  to: Node,
+  before?: Node | null,
+  importContent?: (this: void, from: TNode, to: TNode) => void,
 ): TNode;
 
 export function importNode<TNode extends Node>(
-    from: TNode,
-    to: Node,
-    beforeOrImport?: Node | null | ((this: void, from: TNode, to: TNode) => void),
-    importContent: (this: void, from: TNode, to: TNode) => void = importNodeContent,
+  from: TNode,
+  to: Node,
+  beforeOrImport?: Node | null | ((this: void, from: TNode, to: TNode) => void),
+  importContent: (this: void, from: TNode, to: TNode) => void = importNodeContent,
 ): TNode {
-
   let before: Node | null;
 
   if (typeof beforeOrImport === 'function') {
@@ -54,10 +53,11 @@ export function importNode<TNode extends Node>(
   const doc = nodeDocument(to);
 
   if (isElementNode(from)) {
+    const elementClone = doc.createElement(from.tagName.toLowerCase()) as Node as Element & TNode;
 
-    const elementClone = doc.createElement(from.tagName.toLowerCase()) as Node as (Element & TNode);
-
-    from.getAttributeNames().forEach(attr => elementClone.setAttribute(attr, from.getAttribute(attr)!));
+    from
+      .getAttributeNames()
+      .forEach(attr => elementClone.setAttribute(attr, from.getAttribute(attr)!));
     importContent(from, elementClone);
     to.insertBefore(elementClone, before);
 

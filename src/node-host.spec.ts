@@ -3,14 +3,12 @@ import { nodeHost } from './node-host';
 
 describe('nodeHost', () => {
   it('returns parent element', () => {
-
     const parent = document.createElement('div');
     const child = parent.appendChild(document.createElement('span'));
 
     expect(nodeHost(child)).toBe(parent);
   });
   it('crosses shadow root bounds', () => {
-
     const parent = document.createElement('div');
     const shadowRoot = parent.attachShadow({ mode: 'closed' });
     const child = shadowRoot.appendChild(document.createElement('span'));
@@ -18,7 +16,6 @@ describe('nodeHost', () => {
     expect(nodeHost(child)).toBe(parent);
   });
   it('returns host element for shadow root', () => {
-
     const parent = document.createElement('div');
     const shadowRoot = parent.attachShadow({ mode: 'closed' });
 
@@ -28,7 +25,6 @@ describe('nodeHost', () => {
     expect(nodeHost(document.createElement('dev'))).toBeUndefined();
   });
   it('returns `undefined` for element inside document fragment', () => {
-
     const fragment = document.createDocumentFragment();
     const element = fragment.appendChild(document.createElement('div'));
 

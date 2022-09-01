@@ -47,7 +47,6 @@ describe('isTextNode', () => {
 
 describe('isCDATASectionNode', () => {
   it('returns `true` for `CDATASection`', () => {
-
     const xmlDocument = document.implementation.createDocument(null, null);
 
     expect(isCDATASectionNode(xmlDocument.createCDATASection('test'))).toBe(true);
@@ -60,7 +59,9 @@ describe('isCDATASectionNode', () => {
 
 describe('isProcessingInstructionNode', () => {
   it('returns `true` for `ProcessingInstruction`', () => {
-    expect(isProcessingInstructionNode(document.createProcessingInstruction('test', 'data'))).toBe(true);
+    expect(isProcessingInstructionNode(document.createProcessingInstruction('test', 'data'))).toBe(
+      true,
+    );
   });
   it('returns `false` for everything else', () => {
     expect(isProcessingInstructionNode(document.createElement('div'))).toBe(false);
@@ -98,7 +99,6 @@ describe('isDocumentNode', () => {
 
 describe('isDocumentTypeNode', () => {
   it('returns `true` for `ProcessingInstruction`', () => {
-
     const docType = document.implementation.createDocumentType('test', 'test', 'uri:test');
 
     expect(isDocumentTypeNode(docType)).toBe(true);
@@ -121,7 +121,6 @@ describe('isDocumentFragmentNode', () => {
 
 describe('isShadowRootNode', () => {
   it('returns `true` for `ProcessingInstruction`', () => {
-
     const element1 = document.createElement('test-element');
     const element2 = document.createElement('test-element');
 

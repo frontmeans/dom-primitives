@@ -6,7 +6,7 @@
  * @returns `true` for `Element`, or `false` everything else.
  */
 export function isElementNode(node: Node): node is Element {
-  return node.nodeType === 1/* Node.ELEMENT_NODE */;
+  return node.nodeType === 1;
 }
 
 /**
@@ -17,7 +17,7 @@ export function isElementNode(node: Node): node is Element {
  * @returns `true` for `Attr`, or `false` everything else.
  */
 export function isAttributeNode(node: Node): node is Attr {
-  return node.nodeType === 2/* Node.ATTRIBUTE_NODE */;
+  return node.nodeType === 2;
 }
 
 /**
@@ -28,7 +28,7 @@ export function isAttributeNode(node: Node): node is Attr {
  * @returns `true` for `Text`, or `false` everything else.
  */
 export function isTextNode(node: Node): node is Text {
-  return node.nodeType === 3/* Node.TEXT_NODE */;
+  return node.nodeType === 3;
 }
 
 /**
@@ -39,7 +39,7 @@ export function isTextNode(node: Node): node is Text {
  * @returns `true` for `CDATASection`, or `false` everything else.
  */
 export function isCDATASectionNode(node: Node): node is CDATASection {
-  return node.nodeType === 4/* Node.CDATA_SECTION_NODE */;
+  return node.nodeType === 4;
 }
 
 /**
@@ -50,7 +50,7 @@ export function isCDATASectionNode(node: Node): node is CDATASection {
  * @returns `true` for `ProcessingInstruction`, or `false` everything else.
  */
 export function isProcessingInstructionNode(node: Node): node is ProcessingInstruction {
-  return node.nodeType === 7/* Node.PROCESSING_INSTRUCTION_NODE */;
+  return node.nodeType === 7;
 }
 
 /**
@@ -61,7 +61,7 @@ export function isProcessingInstructionNode(node: Node): node is ProcessingInstr
  * @returns `true` for `Comment`, or `false` everything else.
  */
 export function isCommentNode(node: Node): node is Comment {
-  return node.nodeType === 8/* Node.COMMENT_NODE */;
+  return node.nodeType === 8;
 }
 
 /**
@@ -72,7 +72,7 @@ export function isCommentNode(node: Node): node is Comment {
  * @returns `true` for `Document`, or `false` everything else.
  */
 export function isDocumentNode(node: Node): node is Document {
-  return node.nodeType === 9/* Node.DOCUMENT_NODE */;
+  return node.nodeType === 9;
 }
 
 /**
@@ -83,7 +83,7 @@ export function isDocumentNode(node: Node): node is Document {
  * @returns `true` for `DocumentType`, or `false` everything else.
  */
 export function isDocumentTypeNode(node: Node): node is DocumentType {
-  return node.nodeType === 10/* Node.DOCUMENT_TYPE_NODE */;
+  return node.nodeType === 10;
 }
 
 /**
@@ -94,7 +94,7 @@ export function isDocumentTypeNode(node: Node): node is DocumentType {
  * @returns `true` for `DocumentFragment`, or `false` everything else.
  */
 export function isDocumentFragmentNode(node: Node): node is DocumentFragment {
-  return node.nodeType === 11/* Node.DOCUMENT_FRAGMENT_NODE */;
+  return node.nodeType === 11;
 }
 
 /**
